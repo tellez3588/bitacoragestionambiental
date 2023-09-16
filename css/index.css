@@ -169,10 +169,18 @@ footer img {
   @media all and (min-width: 768px) and (max-width: 1024px) { }
   
   /* Tamaño tablet (768-480) */
-  @media all and (min-width: 480px) and (max-width: 768px) { }
+  @media all and (min-width: 480px) and (max-width: 768px) { 
+    .main {
+        min-height: 60vh;
+    }
+  }
   
   /* Tamaño teléfonos (480-menos ) */
-  @media all and (max-width: 480px) { }
+  @media all and (max-width: 480px) {
+    .main {
+        min-height: 60vh;
+    }
+   }
   
   /*  Orientación: Vertical */
   @media screen and (orientation:portrait) { 
@@ -185,7 +193,11 @@ footer img {
   @media screen and (orientation:landscape) { }
   
   /* iPhone - Orientación: Vertical */
-  @media screen and (max-device-width: 480px) and (orientation:portrait) { } 
+  @media screen and (max-device-width: 480px) and (orientation:portrait) { 
+    .main {
+        min-height: 60vh;
+    }
+  } 
   
   /* iPhone - Orientación: Horizontal  */
   @media screen and (max-device-width: 480px) and (orientation:landscape) { }
