@@ -15,7 +15,7 @@ body {
     left: 0;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     z-index: 999;
@@ -93,6 +93,11 @@ footer img {
         padding: 20px; /* Adjust padding for smaller screens */
     }
 
+    .main {
+        margin-top: 150px; /* Reset padding for larger screens */
+        
+    }
+
     .card {
         width: 100%; /* Make cards full width on smaller screens */
         max-width: 300px; /* Limit the maximum width of the card */
@@ -114,6 +119,7 @@ footer img {
     .main, .semanas {
         padding: 80px; /* Reset padding for larger screens */
     }
+
 
     .card {
         width: 40rem; /* Reset card width for larger screens */
