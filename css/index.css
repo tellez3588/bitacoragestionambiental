@@ -74,7 +74,8 @@ footer article {
 
 .rights {
     display: flex;
-    justify-content: space-around;
+    text-align: center;
+    flex-flow: column;
 }
 
 footer img {
@@ -121,13 +122,6 @@ footer img {
         padding: 20px;
         /* Adjust padding for smaller screens */
     }
-
-    .rights {
-        display: flex;
-        text-align: center;
-        flex-flow: column;
-    }
-
     /* Add more specific styles as needed for smaller screens */
 }
 
