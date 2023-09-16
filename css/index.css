@@ -26,7 +26,6 @@ body {
 .main {
 
     min-height: 40vh; /* Ensure the section takes at least the full viewport height */
-    background-color: rgb(209, 227, 228);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,35 +168,23 @@ footer img {
   @media all and (min-width: 768px) and (max-width: 1024px) { }
   
   /* Tamaño tablet (768-480) */
-  @media all and (min-width: 480px) and (max-width: 768px) { 
-    .main {
-        min-height: 60vh;
-    }
-  }
+  @media all and (min-width: 480px) and (max-width: 768px) { }
   
   /* Tamaño teléfonos (480-menos ) */
-  @media all and (max-width: 480px) {
-    .main {
-        min-height: 60vh;
-    }
-   }
+  @media all and (max-width: 480px) { }
   
   /*  Orientación: Vertical */
-  @media screen and (orientation:portrait) { 
+  @media screen and (orientation:portrait) { }
+  
+  /* Orientación: Horizontal  */
+  @media screen and (orientation:landscape) { 
     .main {
         min-height: 60vh;
     }
   }
   
-  /* Orientación: Horizontal  */
-  @media screen and (orientation:landscape) { }
-  
   /* iPhone - Orientación: Vertical */
-  @media screen and (max-device-width: 480px) and (orientation:portrait) { 
-    .main {
-        min-height: 60vh;
-    }
-  } 
+  @media screen and (max-device-width: 480px) and (orientation:portrait) { } 
   
   /* iPhone - Orientación: Horizontal  */
   @media screen and (max-device-width: 480px) and (orientation:landscape) { }
