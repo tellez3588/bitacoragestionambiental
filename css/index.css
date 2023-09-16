@@ -95,6 +95,7 @@ footer img {
 
     .card {
         width: 100%; /* Make cards full width on smaller screens */
+        max-width: 400px; /* Limit the maximum width of the card */
     }
 
     footer {
