@@ -72,6 +72,11 @@ footer article {
     margin-top: 30px;
 }
 
+.rights {
+    display: flex;
+    justify-content: space-around;
+}
+
 footer img {
     width: 10px;
     height: 10px;
@@ -86,25 +91,41 @@ footer img {
 /* For screens with a maximum width of 768px */
 @media (max-width: 768px) {
     .navbar {
-        padding: 5px; /* Adjust padding for smaller screens */
+        text-align: center;
+        padding: 5px;
+        position: fixed;
+        z-index: 999;
+        opacity: 0.9;
     }
 
-    .main, .semanas {
-        padding: 20px; /* Adjust padding for smaller screens */
+    .main,
+    .semanas {
+        padding: 20px;
+        /* Adjust padding for smaller screens */
     }
 
     .main {
-        margin-top: 150px; /* Reset padding for larger screens */
-        
+        margin-top: 150px;
+        /* Reset padding for larger screens */
+
     }
 
     .card {
-        width: 100%; /* Make cards full width on smaller screens */
-        max-width: 300px; /* Limit the maximum width of the card */
+        width: 100%;
+        /* Make cards full width on smaller screens */
+        max-width: 300px;
+        /* Limit the maximum width of the card */
     }
 
     footer {
-        padding: 20px; /* Adjust padding for smaller screens */
+        padding: 20px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .rights {
+        display: flex;
+        text-align: center;
+        flex-flow: column;
     }
 
     /* Add more specific styles as needed for smaller screens */
@@ -113,20 +134,25 @@ footer img {
 /* For screens with a minimum width of 769px */
 @media (min-width: 769px) {
     .navbar {
-        padding: 10px; /* Reset padding for larger screens */
+        padding: 10px;
+        /* Reset padding for larger screens */
     }
 
-    .main, .semanas {
-        padding: 80px; /* Reset padding for larger screens */
+    .main,
+    .semanas {
+        padding: 80px;
+        /* Reset padding for larger screens */
     }
 
 
     .card {
-        width: 40rem; /* Reset card width for larger screens */
+        width: 40rem;
+        /* Reset card width for larger screens */
     }
 
     footer {
-        padding: 60px; /* Reset padding for larger screens */
+        padding: 60px;
+        /* Reset padding for larger screens */
     }
 
     /* Add more specific styles as needed for larger screens */
