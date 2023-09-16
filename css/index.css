@@ -25,6 +25,7 @@ body {
 
 .main {
 
+    min-height: 40vh; /* Ensure the section takes at least the full viewport height */
     background-color: rgb(209, 227, 228);
     display: flex;
     justify-content: center;
@@ -33,6 +34,10 @@ body {
     padding: 80px;
     margin-top: 100px;
     border-radius: 0.75rem;
+    background-image: url("../images/1ea9f0d4-mex-la-gestion-ambiental-presente-en-tiempos-de-pandemia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
 
 }
 
@@ -136,6 +141,10 @@ footer img {
     .semanas {
         padding: 80px;
         /* Reset padding for larger screens */
+    }
+
+    .main {
+        min-height: 80vh;
     }
 
 
