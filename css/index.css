@@ -51,8 +51,17 @@ body {
     border-radius: 0.75rem;
 }
 
+.semanas img {
+
+    width: auto;
+    height: 468px;
+}
+
+
+
 .card {
     margin-top: 50px;
+    height: 700px;
 }
 
 
