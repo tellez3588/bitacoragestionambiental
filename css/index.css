@@ -64,6 +64,34 @@ body {
     height: 700px;
 }
 
+/* CSS para animar el h3 y el p */
+.card h3,
+.card p {
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Estilo inicial (puedes personalizar los valores) */
+.card h3 {
+  color: #333; /* Color inicial */
+  transform: scale(1); /* Escala inicial */
+}
+
+.card p {
+  color: #666; /* Color inicial */
+  transform: translateY(0); /* Traslación inicial */
+}
+
+/* Estilo al pasar el mouse sobre los elementos */
+.card:hover h3 {
+  color: #007bff; /* Color al pasar el mouse */
+  transform: scale(1.1); /* Escala al pasar el mouse */
+}
+
+.card:hover p {
+  color: #333; /* Color al pasar el mouse */
+  transform: translateY(-5px); /* Traslación al pasar el mouse */
+}
+
 
 footer {
     width: 100%;
@@ -118,6 +146,21 @@ footer img {
         /* Adjust padding for smaller screens */
     }
 
+    .semanas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 0px;
+        margin-top: 50px;
+    }
+
+    .semanas article:last-child {
+        margin-bottom: 50px;
+        /* Cambia el valor según tus necesidades */
+    }
+
     .main {
         margin-top: 150px;
         /* Reset padding for larger screens */
@@ -129,6 +172,14 @@ footer img {
         /* Make cards full width on smaller screens */
         max-width: 300px;
         /* Limit the maximum width of the card */
+        height: auto;
+        
+    }
+
+    .semanas img {
+
+        width: auto;
+        height: 200px;
     }
 
     footer {
@@ -150,6 +201,8 @@ footer img {
         padding: 80px;
         /* Reset padding for larger screens */
     }
+
+    
 
     .main {
         min-height: 80vh;
