@@ -25,7 +25,8 @@ body {
 
 .main {
 
-    min-height: 40vh; /* Ensure the section takes at least the full viewport height */
+    min-height: 40vh;
+    /* Ensure the section takes at least the full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +37,8 @@ body {
     background-image: url("../images/1ea9f0d4-mex-la-gestion-ambiental-presente-en-tiempos-de-pandemia.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; /* Center the background image */
+    background-position: center;
+    /* Center the background image */
 
 }
 
@@ -64,32 +66,48 @@ body {
     height: 700px;
 }
 
+/*
 /* CSS para animar el h3 y el p */
 .card h3,
 .card p {
-  transition: color 0.3s, transform 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 /* Estilo inicial (puedes personalizar los valores) */
 .card h3 {
-  color: #333; /* Color inicial */
-  transform: scale(1); /* Escala inicial */
+    color: #333;
+    /* Color inicial */
+    transform: scale(1);
+    /* Escala inicial */
 }
 
 .card p {
-  color: #666; /* Color inicial */
-  transform: translateY(0); /* Traslación inicial */
+    color: #666;
+    /* Color inicial */
+    transform: translateY(0);
+    /* Traslación inicial */
 }
 
 /* Estilo al pasar el mouse sobre los elementos */
 .card:hover h3 {
-  color: #007bff; /* Color al pasar el mouse */
-  transform: scale(1.1); /* Escala al pasar el mouse */
+    color: #007bff;
+    /* Color al pasar el mouse */
+    transform: scale(1.1);
+    /* Escala al pasar el mouse */
 }
 
 .card:hover p {
-  color: #333; /* Color al pasar el mouse */
-  transform: translateY(-5px); /* Traslación al pasar el mouse */
+    color: #333;
+    /* Color al pasar el mouse */
+    transform: translateY(-5px);
+    /* Traslación al pasar el mouse */
+}
+
+.hit-the-floor {
+    color: black;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 }
 
 
@@ -131,7 +149,7 @@ footer img {
 }
 
 /* For screens with a maximum width of 768px */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .navbar {
         text-align: center;
         padding: 5px;
@@ -153,7 +171,7 @@ footer img {
         flex-wrap: wrap;
         text-align: center;
         padding: 0px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .semanas article:last-child {
@@ -163,6 +181,8 @@ footer img {
 
     .main {
         margin-top: 150px;
+        min-height: 20vh;
+        text-align: center;
         /* Reset padding for larger screens */
 
     }
@@ -173,7 +193,7 @@ footer img {
         max-width: 300px;
         /* Limit the maximum width of the card */
         height: auto;
-        
+
     }
 
     .semanas img {
@@ -186,11 +206,12 @@ footer img {
         padding: 20px;
         /* Adjust padding for smaller screens */
     }
+
     /* Add more specific styles as needed for smaller screens */
 }
 
 /* For screens with a minimum width of 769px */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .navbar {
         padding: 10px;
         /* Reset padding for larger screens */
@@ -202,7 +223,9 @@ footer img {
         /* Reset padding for larger screens */
     }
 
-    
+
+
+
 
     .main {
         min-height: 80vh;
@@ -223,36 +246,41 @@ footer img {
 }
 
 
-  /* Tamaño por defecto pantallas (1280-1024) */
-  @media all and (min-width: 1024px) and (max-width: 1280px) { }
-  
-  /* Tamaño tablet horizontal (1024-768) */
-  @media all and (min-width: 768px) and (max-width: 1024px) { }
-  
-  /* Tamaño tablet (768-480) */
-  @media all and (min-width: 480px) and (max-width: 768px) { }
-  
-  /* Tamaño teléfonos (480-menos ) */
-  @media all and (max-width: 480px) { }
-  
-  /*  Orientación: Vertical */
-  @media screen and (orientation:portrait) { }
-  
-  /* Orientación: Horizontal  */
-  @media screen and (orientation:landscape) { 
-    .main {
-        min-height: 60vh;
+/* Tamaño por defecto pantallas (1280-1024) */
+@media all and (min-width: 1024px) and (max-width: 1280px) {}
+
+/* Tamaño tablet horizontal (1024-768) */
+@media all and (min-width: 767px) and (max-width: 1025px) {}
+
+/* Tamaño tablet (768-480) */
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .semanas {
+        background-color: rgb(209, 227, 228);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 80px;
+        margin-top: 100px;
+        border-radius: 0.75rem;
     }
-  }
-  
-  /* iPhone - Orientación: Vertical */
-  @media screen and (max-device-width: 480px) and (orientation:portrait) { } 
-  
-  /* iPhone - Orientación: Horizontal  */
-  @media screen and (max-device-width: 480px) and (orientation:landscape) { }
-  
-  /* iPad - Orientación: Vertical */
-  @media screen and (min-device-width: 481px) and (orientation:portrait) { }
-  
-  /* iPad - Orientación: Horizontal  */
-  @media screen and (min-device-width: 481px) and (orientation:landscape) { }
+}
+
+/* Tamaño teléfonos (480-menos ) */
+@media all and (max-width: 480px) {}
+
+/*  Orientación: Vertical */
+@media screen and (orientation:portrait) {}
+
+/* Orientación: Horizontal  */
+@media screen and (orientation:landscape) {}
+
+/* iPhone - Orientación: Vertical */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {}
+
+/* iPhone - Orientación: Horizontal  */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {}
+
+/* iPad - Orientación: Vertical */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {}
+
+/* iPad - Orientación: Horizontal  */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {}
