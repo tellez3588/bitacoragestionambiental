@@ -62,9 +62,14 @@ body {
 
 
 .card {
+    text-align: center;
     margin-top: 50px;
     height: 700px;
+
 }
+
+
+
 
 /*
 /* CSS para animar el h3 y el p */
@@ -158,7 +163,6 @@ footer img {
         opacity: 0.9;
     }
 
-    .main,
     .semanas {
         padding: 20px;
         /* Adjust padding for smaller screens */
@@ -183,6 +187,8 @@ footer img {
         margin-top: 150px;
         min-height: 20vh;
         text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
         /* Reset padding for larger screens */
 
     }
@@ -202,12 +208,6 @@ footer img {
         height: 200px;
     }
 
-    footer {
-        padding: 20px;
-        /* Adjust padding for smaller screens */
-    }
-
-    /* Add more specific styles as needed for smaller screens */
 }
 
 /* For screens with a minimum width of 769px */
