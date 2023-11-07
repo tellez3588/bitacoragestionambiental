@@ -245,6 +245,9 @@ footer img {
         padding: 60px;
         /* Reset padding for larger screens */
     }
+    .footerlist {
+        width: 200px;
+    }
 
     /* Add more specific styles as needed for larger screens */
 }
